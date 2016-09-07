@@ -1,5 +1,8 @@
 package com.company;
 
+/**
+ * Made by Dylan Piera 7-9-2016 - Practica Excercise 2B. Make a Body Mass Index calculator.
+ */
 
 import java.util.Scanner;
 
@@ -9,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double mass = getMass();
-        double length = getLength();
+        double mass = getMass(); //Get's your mass in KG using our scan method
+        double length = getLength(); //Get's your length in CM using our scan method
 
         double bmi = calcBMI(mass, length);
 
@@ -39,6 +42,7 @@ public class Main {
         //cm to meters
         length = length / 100;
 
+        //Using the formula
         double bmi = (mass / Math.pow(length,2));
 
         return bmi;

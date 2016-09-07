@@ -1,3 +1,8 @@
+/**
+ * Made by Dylan Piera 7-9-2016 - Practica Excercise 2a. Make a program that calculates someones age in years and venusyears,
+ * by asking them for their birthyear and age.
+ */
+
 package com.company;
 
 import java.util.Scanner;
