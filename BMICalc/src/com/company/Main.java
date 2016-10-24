@@ -19,6 +19,10 @@ public class Main {
 
         System.out.printf("Your Body Mass Index is: %f",bmi);
 
+
+
+
+
         }
 
     public static double getMass(){

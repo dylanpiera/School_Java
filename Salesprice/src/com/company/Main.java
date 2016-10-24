@@ -10,7 +10,9 @@ public class Main {
 
     public static Scanner in = new Scanner(System.in);
     public static int profitPercentage;
-    public static double inPrice, outPrice;
+    public static double inPrice;
+    public static final double BTW_HOOG = 21;
+    public static final double BTW_LAAG = 6;
 
     public static void main(String[] args) {
 
@@ -25,8 +27,8 @@ public class Main {
         float percentage = (float)inPercentage/100;
 
         System.out.printf("The sales price, exclusive of tax will be: € %6.2f \n",((inPrice * (percentage + 1))));
-        System.out.printf("The sales price, with 6 percent tax will be: € %6.2f \n",((inPrice * (percentage + 1)) * (1.06)));
-        System.out.printf("The sales price, with 21 percent tax will be: € %6.2f \n",((inPrice * (percentage + 1)) * (1.21)));
+        System.out.printf("The sales price, with 6 percent tax will be: € %6.2f \n",((inPrice * (percentage + 1)) * ((BTW_LAAG / 100) +1)));
+        System.out.printf("The sales price, with 21 percent tax will be: € %6.2f \n",((inPrice * (percentage + 1)) * ((BTW_HOOG / 100) +1)));
 
     }
 
