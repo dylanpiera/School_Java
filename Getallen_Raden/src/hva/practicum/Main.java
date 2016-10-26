@@ -18,6 +18,7 @@ public class Main {
         boolean num1, num2, num3, isCorrect = false;
         do {
             guesses++;
+	    correct = 0;
             int[] input = getInput(); //Asks the user for 3 numbers seperated by a space
 
 
@@ -28,7 +29,7 @@ public class Main {
 
             if (num1&&num2&&num3) isCorrect = true;
             else {
-                if (num1) correct = 1;
+                if (num1) correct += 1;
                 if (num2) correct += 1;
                 if (num3) correct += 1;
                 if (num1 != true && num2 != true && num3 != true) correct = 0;
