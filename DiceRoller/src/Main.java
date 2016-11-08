@@ -48,5 +48,6 @@ public class Main {
             default:
                 throw new IllegalArgumentException();
         }
+        System.out.println("");
     }
 }
