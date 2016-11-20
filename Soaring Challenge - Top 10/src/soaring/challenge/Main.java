@@ -137,7 +137,7 @@ public class Main {
     //Print de gebruikers naam en zijn top 10 lijst
     public static void printTop10(String username, String[] top10) {
         System.out.println(username + "'s top 10: ");
-        for(int i = 0;i < top10.length;i++) {
+        for (int i = 0; i < top10.length; i++) {
             System.out.println((i + 1) + ". " + top10[i]);
         }
         System.out.println("");
@@ -150,17 +150,17 @@ public class Main {
         System.out.println("The selected category was: " + subCategory + " and these are the results:\n");
 
         if (totalUsers == 1) {
-            printTop10(users[0],top10[0]);
+            printTop10(users[0], top10[0]);
 
 
         } else if (totalUsers == 2) {
-            printTop10(users[0],top10[0]);
-            printTop10(users[1],top10[1]);
+            printTop10(users[0], top10[0]);
+            printTop10(users[1], top10[1]);
 
         } else if (totalUsers == 3) {
-            printTop10(users[0],top10[0]);
-            printTop10(users[1],top10[2]);
-            printTop10(users[2],top10[3]);
+            printTop10(users[0], top10[0]);
+            printTop10(users[1], top10[2]);
+            printTop10(users[2], top10[3]);
 
         } else {
             System.out.println("An unknown error occured.");
