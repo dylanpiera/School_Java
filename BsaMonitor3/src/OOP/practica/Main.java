@@ -56,7 +56,7 @@ public class Main {
 
         System.out.printf("Total received STP: %d/%d\n",pointsReceived,totalPoints);
 
-        int toGetPoints = (int) floor(totalPoints * (5/6));
+        int toGetPoints = (int) floor(totalPoints * (5.0/6.0));
         if(pointsReceived <= toGetPoints) {
             System.out.println("Warning. You are on your way for a negative BSA.");
         }
